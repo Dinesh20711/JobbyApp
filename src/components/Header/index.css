@@ -1,0 +1,38 @@
+.nav-bar-section {
+  background-color: #202020;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-image {
+  height: 40px;
+}
+
+.nav-items {
+  display: flex;
+
+  width: 155px;
+  justify-content: space-between;
+}
+
+.link-item {
+  text-decoration: none;
+  list-style: none;
+  color: White;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: 'Roboto';
+}
+
+.logOut-btn {
+  background-color: #4f46e5;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  width: 80px;
+}
