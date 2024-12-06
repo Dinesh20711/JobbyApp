@@ -1,40 +1,97 @@
-* {
-  margin: 5px;
-}
-
-.home-content-container {
-  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+.home-container {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  border: 2px solid white;
+}
+
+.home-page {
+  flex-grow: 1;
   background-size: cover;
-  padding: 5%;
+  padding: 22px;
 }
 
-.home-page-heading {
-  color: #f8fafc;
-  font-size: 42px;
+@media screen and (max-width: 575px) {
+  .home-page {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .home-page {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+    padding: 42px;
+    padding-top: 52px;
+  }
+}
+
+.home-page-content {
+  max-width: 550px;
+}
+
+.home-heading {
   font-family: 'Roboto';
-  font-weight: 'bold';
+  font-size: 31px;
+  line-height: 1.4;
+  color: #ffffff;
 }
 
-.home-page-description {
+@media screen and (min-width: 768px) {
+  .home-heading {
+    font-size: 37px;
+    font-weight: 850;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home-heading {
+    font-size: 52px;
+    font-weight: 550;
+  }
+}
+
+.home-description {
+  font-family: 'Roboto';
+  font-size: 15px;
+  margin-top: 26px;
+  line-height: 1.5;
   color: #f1f5f9;
+}
+
+@media screen and (min-width: 768px) {
+  .home-description {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home-description {
+    font-size: 21px;
+  }
+}
+
+.find-jobs-button {
   font-family: 'Roboto';
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.home-content-section {
-  width: 40%;
-
-  padding: 20px;
-}
-
-.find-job-btn {
-  background-color: #6366f1;
-  color: white;
-  padding: 10px;
+  font-size: 13px;
   border: none;
+  cursor: pointer;
   outline: none;
-  border-radius: 4px;
+  background-color: #6366f1;
+  padding: 11px 19px;
+  border-radius: 11px;
+  color: #f8fafc;
+  margin-top: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .find-jobs-button {
+    font-size: 16px;
+    padding: 11px 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .find-jobs-button {
+    font-size: 17px;
+    padding: 13px 21px;
+  }
 }
